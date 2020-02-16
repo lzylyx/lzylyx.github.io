@@ -258,40 +258,23 @@
 
 <div class="item">
 <div class="date">
-<span>2011 - 2013</span>
-</div>
-<div class="content">
-<h4>Educational Specialist</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-</div>
-</div>
-<div class="item">
-<div class="date">
-<span>2008 - 2010</span>
-</div>
-<div class="content">
-<h4>Doctoral Degree</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
-</div>
-</div>
-<div class="item">
-<div class="date">
-<span>2005 - 2007</span>
+<span>2012 - 2015</span>
 </div>
 <div class="content">
 <h4>Master Degree</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+<p>Guizhou University</p>
 </div>
 </div>
 <div class="item">
 <div class="date">
-<span>2000 - 2004</span>
+<span>2007 - 2011</span>
 </div>
 <div class="content">
 <h4>Bachelor Degree</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+<p>Chengdu University of Information Technology</p>
 </div>
 </div>
+
 </div>
 
 <!--.col-md-6-->
@@ -309,38 +292,38 @@
 
 <div class="item">
 <div class="date">
-<span>2016 - Present</span>
+<span>2019 - Now</span>
 </div>
 <div class="content">
-<h4>Lead Web Developer</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+<h4>Senior Machine Vision Algorithm Development</h4>
+<p>BeiJing MouShi Technology Co., Ltd</p>
 </div>
 </div>
 <div class="item">
 <div class="date">
-<span>2012 - 2015</span>
+<span>2018 - 2019</span>
 </div>
 <div class="content">
-<h4>Senior Web Developer</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+<h4>Computer Vision Algorithm Development</h4>
+<p>BeiJing XinCheng Technology Co., Ltd</p>
 </div>
 </div>
 <div class="item">
 <div class="date">
-<span>2010 - 2011</span>
+<span>2017 - 2017.8</span>
 </div>
 <div class="content">
-<h4>Junior Web Developer</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+<h4>Face Recognition Algorithm Development</h4>
+<p>Guizhou HuaShang High Technology Co., Ltd</p>
 </div>
 </div>
 <div class="item">
 <div class="date">
-<span>2008 - 2009</span>
+<span>2016 - 2017</span>
 </div>
 <div class="content">
-<h4>Web Developer</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nibh et metus facilisis sollicitudin.</p>
+<h4>AI Algorithm Engineer</h4>
+<p>GuiZhou QianChi Information Co., Ltd</p>
 </div>
 </div>
 </div>
@@ -363,17 +346,18 @@
 <div class="sec_title">
 <h2>Project Experience</h2>
 </div>
+
 <div class="row">
 
 <!--Service 1-->
 <div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
-<i class="pe-7s-anchor"></i>
+<i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
-<h3>Strategy Solutions</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<h3>Meter Automatic Detection and Identification of Gas Station</h3>
+<p>First, collect the meter picture data from the gas station, sort and mark it. Then, use the single-stage target detection algorithm CornerNet Lite to detect the meter. Next, use the end-to-end OCR algorithm E2E to identify the numbers and units in the meter, the pointer is segmented by the semantic segmentation algorithm PSP. The intermediate results obtained by deep learning are used in combination with other algorithms to calculate the final number of the meter.The architecture of entire algorithms are deployed on ROS, The data acquired from the camera, and calculated in patrol robot, finally the results are published to ROS, which is then sent to the client.</p>
 </div>
 </div>
 </div>
@@ -382,28 +366,29 @@
 <div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
-<i class="pe-7s-cup"></i>
+<i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
-<h3>Web Development</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<h3>Switch Detection of Power Station</h3>
+<p>Firstly, switch and contact data of the power station are collected, label and expand the data, use the single-stage target detection algorithm YoloV3 to detect the switch and contacts of the power station, and use Node to publish the results to the ROS system.</p>
 </div>
 </div>
 </div>
 </div>
 
 <!--.row-->
+
 <div class="row">
 
 <!--Service 3-->
 <div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
-<i class="pe-7s-graph1"></i>
+<i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
-<h3>Brand Building</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<h3>Pedestrian Tracking Based on Spencer</h3>
+<p>Use RGBD camera to follow the people, first use YoloV3 to detect the people, then use DeepSort to extract the features of the people, and by using Kalman filtering to  estimate the position of the next frame and assign the ReID, and use the Hungarian algorithm to match this frame and next frame of detection features when tracking. Finally publish the position information of the match result of each frame to the ROS system.</p>
 </div>
 </div>
 </div>
@@ -412,10 +397,10 @@
 <div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
-<i class="pe-7s-server"></i>
+<i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
-<h3>Web Design</h3>
+<h3>Lane Line Edge Detection in Airport</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 </div>
 </div>
@@ -423,35 +408,101 @@
 </div>
 
 <!--.row-->
+
 <div class="row">
 
 <!--Service 5-->
 <div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
-<i class="pe-7s-config"></i>
+<i class="pe-7s-photo"></i>
 </div>
 <div class="service_content">
-<h3>Easy To Setup</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<h3>Goods Detection in Tray of Airport</h3>
+<p>Intel RealSense D415 is adopted as the detection device. Firstly, the depth information of D415 is used to lock the edge area of the tray, and then the area inside the tray is segmented and calculate the patch information of this area. Finally, according to the difference of local variance and combined with the depth information inside the tray to detect whether the goods in the tray.</p>
 </div>
 </div>
 </div>
+
 <!--Service 6-->
 <div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
-<i class="pe-7s-star"></i>
+<i class="pe-7s-phone"></i>
 </div>
 <div class="service_content">
-<h3>Clean Code</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<h3>OCR Based on PDF File</h3>
+<p>The entire algorithm architecture is divided into five parts. The first part is PDF convert to image. The second part is text detection, firstly, CTPN is used to detect line text, and then combine other algorithms to segment each text, and count the position information of each text; The third part is the character recognition, the backbone of the recognition network is dpn92, and the training characters are from GB2312 encoding; The fourth part is text generate to txt file, which is written into a txt file according to the recognition result and position information of each word; The fifth part it is txt file convert to Word file, that is the content in the txt file is written into the Word file. The entire algorithm architecture is deployed on the cloud server, the front end is deployed with Flask. The server response is obtained by sending a PDF document request. the server uses multi-threaded parallel recognition to return the results to the front end. When testing a 400-word pure PDF document, the accuracy rate can reach about 85%.</p>
 </div>
 </div>
 </div>
 </div>
 
 <!--.row-->
+
+<div class="row">
+
+<!--Service 7-->
+<div class="col-sm-6 item">
+<div class="content">
+<div class="font-icon">
+<i class="pe-7s-phone"></i>
+</div>
+<div class="service_content">
+<h3>SDK Development on Cellphone Application</h3>
+<p>A scanning tool app, I am mainly responsible for developing the SDK of the app scanning components, which mainly includes SDK License module, intelligent edge  detection module, scanning module and filter module. The SDK is packaged into libraries required by Android and ios respectively. The scanning function of SDK is basically the same as another app that of named scanning Almighty King, and the scanning effect is no less than that app. The intelligent edge detection effect reaches the same level as Microsoft Office Lens. The app URL is: https://apps.apple.com/cn/app/id1325527674 </p>
+</div>
+</div>
+</div>
+
+<!--Service 8-->
+<div class="col-sm-6 item">
+<div class="content">
+<div class="font-icon">
+<i class="pe-7s-camera"></i>
+</div>
+<div class="service_content">
+<h3>Face Recognition Development Based on Fluorite Camera</h3>
+<p>We using the fluorite camera to go on secondary development, At the beginning, the face recognition module of dlib library was used, and later, FaceNet was used for face recognition. In detail, firstly, MTCNN is used to detect the face, then find the key points of the face, align the face, calculate the 512-dimensional face feature vector, and finally compare the feature vector with the feature vector in the face library, finally, return the comparison result to the server. Without considering the interference of occlusion and bright light, the correct recognition rate of the camera can reach about 95%.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!--.row-->
+
+<div class="row">
+
+<!--Service 9-->
+<div class="col-sm-6 item">
+<div class="content">
+<div class="font-icon">
+<i class="pe-7s-photo"></i>
+</div>
+<div class="service_content">
+<h3>Face Expression Recognition</h3>
+<p>First use cnn detection to detect the face, then use 68 descriptors to locate the facial features and set them as key points, combine these key points for classification and discrimination, and finally recognize the facial expression through the classification and discrimination results. There are four types of expressions to be recognized: angry, surprised, happy, and normal. The accuracy of expression recognition can reach more than 90%.</p>
+</div>
+</div>
+</div>
+
+<!--Service 10-->
+<div class="col-sm-6 item">
+<div class="content">
+<div class="font-icon">
+<i class="pe-7s-camera"></i>
+</div>
+<div class="service_content">
+<h3>Enhancement and Haze Removal in Traffic Surveillance Video</h3>
+<p>The goal is improve the imaging quality in traffic surveillance video by use image enhancement algorithm. Firstly, i developed a local histogram statistical algorithm, and then i developed a fuzzy domain edge contrast enhancement algorithm, the imaging enhancement effect is obvious. In the haze environment, a contrast-constrained adaptive histogram algorithm is used first, and then a new fast dehazing algorithm is developed based on the principle of Dark Channel and the atmospheric scattering model combined with PCA. The dehazing effect is obvious, and the algorithm can meet the real-time processing needs.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!--.row-->
+
+
 </div>
 <!--.container-->
 </div>
