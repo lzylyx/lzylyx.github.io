@@ -3,7 +3,7 @@
 <html lang="zxx" class=" mediaqueries">
 
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 		<!-- META DATA -->
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -136,14 +136,24 @@
 </div>
 </div>
 </div>
+
 <div class="side side-right">
 <div class="intro-content">
+
+<div class="translation">
+<a href="chinese_index.html"><p style="text-align:right;">
+ÖÐÎÄ</p>
+</a>
+</div>
+
+
 <div class="profile">
 <img src="images/profile.jpg" alt="profile">
 </div>
 <h1>
 <span>ZengYan Liang</span>
 </h1>
+
 <div class="menu">
 
 <!--Social links-->
@@ -160,6 +170,7 @@
 </div>
 
 <!--Menu Items-->
+
 <ul class="list-unstyled menu_list" id="menu">
 <li><a href="#home" class="active_item">home</a></li>
 <li><a href="#about" class="">about me</a></li>
@@ -167,6 +178,7 @@
 <li><a href="#showcase" class="">my showcase</a></li>
 <li><a href="#resume" class="">Edu&Job experience</a></li>
 </ul>
+
 </div>
 <!--.menu-->
 </div>
@@ -205,7 +217,7 @@
 <div class="skill">
 <ul type="square">
 <li style="font-size:18px;">TensorFlow distributed training</li>
-<li style="font-size:18px;">opencv mix with dlib,cuda</li>
+<li style="font-size:18px;">opencv mix with dlib, cuda</li>
 <li style="font-size:18px;">ROS</li>
 <li style="font-size:18px;">team capacity</li>
 </ul>
@@ -218,7 +230,7 @@
 <!-- Lang 1 -->
 <div class="skill">
 <ul type="square">
-<li style="font-size:18px;">python mix with c++,java,c#</li>
+<li style="font-size:18px;">python mix with c++, java, c#</li>
 <li style="font-size:18px;">c++ mix with Android</li>
 <li style="font-size:18px;">Linux shell</li>
 <li style="font-size:18px;">algorithm programming, write patent</li>
@@ -261,8 +273,8 @@
 <span>2012 - 2015</span>
 </div>
 <div class="content">
-<h4>Master Degree</h4>
-<p>Guizhou University</p>
+<h4>Intelligent information processing and pattern recognition</h4>
+<p>Guizhou University Master</p>
 </div>
 </div>
 <div class="item">
@@ -270,8 +282,8 @@
 <span>2007 - 2011</span>
 </div>
 <div class="content">
-<h4>Bachelor Degree</h4>
-<p>Chengdu University of Information Technology</p>
+<h4>Electronic information engineering</h4>
+<p>Chengdu University of Information Technology Bachelor</p>
 </div>
 </div>
 
@@ -350,28 +362,25 @@
 <div class="row">
 
 <!--Service 1-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
 <h3>Meter Automatic Detection and Identification of Gas Station</h3>
-<p>First, collect the meter picture data from the gas station, sort and mark it. Then, use the single-stage target detection algorithm CornerNet Lite to detect the meter. Next, use the end-to-end OCR algorithm E2E to identify the numbers and units in the meter, the pointer is segmented by the semantic segmentation algorithm PSP. The intermediate results obtained by deep learning are used in combination with other algorithms to calculate the final number of the meter.The architecture of entire algorithms are deployed on ROS, The data acquired from the camera, and calculated in patrol robot, finally the results are published to ROS, which is then sent to the client.</p>
-</div>
+<p>First, collect the meter picture data from the gas station, sort and mark it. Then, use the single-stage target detection algorithm CornerNet Lite to detect the meter. Next, use the end-to-end OCR algorithm E2E to identify the numbers and units in the meter, the pointer is segmented by the semantic segmentation algorithm PSP. The intermediate results obtained by deep learning are used in combination with other algorithms to calculate the final number of the meter.The architecture of entire algorithms are deployed on ROS, The data acquired from the camera, and calculated in patrol robot, finally the results are published to ROS, which is then sent to the client.<br><br/></p>
 </div>
 </div>
 
+
 <!--Service 2-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
 <h3>Switch Detection of Power Station</h3>
-<p>Firstly, switch and contact data of the power station are collected, label and expand the data, use the single-stage target detection algorithm YoloV3 to detect the switch and contacts of the power station, and use Node to publish the results to the ROS system.</p>
-</div>
+<p>Firstly, switch and contact data of the power station are collected, label and expand the data, use the single-stage target detection algorithm YoloV3 to detect the switch and contacts of the power station, and use Node to publish the results to the ROS system.<br><br/></p>
 </div>
 </div>
 </div>
@@ -381,59 +390,53 @@
 <div class="row">
 
 <!--Service 3-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
 <h3>Pedestrian Tracking Based on Spencer</h3>
-<p>Use RGBD camera to follow the people, first use YoloV3 to detect the people, then use DeepSort to extract the features of the people, and by using Kalman filtering to  estimate the position of the next frame and assign the ReID, and use the Hungarian algorithm to match this frame and next frame of detection features when tracking. Finally publish the position information of the match result of each frame to the ROS system.</p>
-</div>
+<p>Use RGBD camera to follow the people, first use YoloV3 to detect the people, then use DeepSort to extract the features of the people, and by using Kalman filtering to  estimate the position of the next frame and assign the ReID, and use the Hungarian algorithm to match this frame and next frame of detection features when tracking. Finally publish the position information of the match result of each frame to the ROS system.<br><br/></p>
 </div>
 </div>
 
+
 <!--Service 4-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
 <h3>Lane Line Edge Detection in Airport</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br><br/></p>
 </div>
 </div>
 </div>
-</div>
+
 
 <!--.row-->
 
 <div class="row">
 
 <!--Service 5-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-photo"></i>
 </div>
 <div class="service_content">
 <h3>Goods Detection in Tray of Airport</h3>
-<p>Intel RealSense D415 is adopted as the detection device. Firstly, the depth information of D415 is used to lock the edge area of the tray, and then the area inside the tray is segmented and calculate the patch information of this area. Finally, according to the difference of local variance and combined with the depth information inside the tray to detect whether the goods in the tray.</p>
-</div>
+<p>Intel RealSense D415 is adopted as the detection device. Firstly, the depth information of D415 is used to lock the edge area of the tray, and then the area inside the tray is segmented and calculate the patch information of this area. Finally, according to the difference of local variance and combined with the depth information inside the tray to detect whether the goods in the tray.<br><br/></p>
 </div>
 </div>
 
 <!--Service 6-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-phone"></i>
 </div>
 <div class="service_content">
 <h3>OCR Based on PDF File</h3>
-<p>The entire algorithm architecture is divided into five parts. The first part is PDF convert to image. The second part is text detection, firstly, CTPN is used to detect line text, and then combine other algorithms to segment each text, and count the position information of each text; The third part is the character recognition, the backbone of the recognition network is dpn92, and the training characters are from GB2312 encoding; The fourth part is text generate to txt file, which is written into a txt file according to the recognition result and position information of each word; The fifth part it is txt file convert to Word file, that is the content in the txt file is written into the Word file. The entire algorithm architecture is deployed on the cloud server, the front end is deployed with Flask. The server response is obtained by sending a PDF document request. the server uses multi-threaded parallel recognition to return the results to the front end. When testing a 400-word pure PDF document, the accuracy rate can reach about 85%.</p>
-</div>
+<p>The entire algorithm architecture is divided into five parts. The first part is PDF convert to image. The second part is text detection, firstly, CTPN is used to detect line text, and then combine other algorithms to segment each text, and count the position information of each text; The third part is the character recognition, the backbone of the recognition network is dpn92, and the training characters are from GB2312 encoding; The fourth part is text generate to txt file, which is written into a txt file according to the recognition result and position information of each word; The fifth part it is txt file convert to Word file, that is the content in the txt file is written into the Word file. The entire algorithm architecture is deployed on the cloud server, the front end is deployed with Flask. The server response is obtained by sending a PDF document request. the server uses multi-threaded parallel recognition to return the results to the front end. When testing a 400-word pure PDF document, the accuracy rate can reach about 85%.<br><br/></p>
 </div>
 </div>
 </div>
@@ -443,59 +446,54 @@
 <div class="row">
 
 <!--Service 7-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-phone"></i>
 </div>
 <div class="service_content">
 <h3>SDK Development on Cellphone Application</h3>
-<p>A scanning tool app, I am mainly responsible for developing the SDK of the app scanning components, which mainly includes SDK License module, intelligent edge  detection module, scanning module and filter module. The SDK is packaged into libraries required by Android and ios respectively. The scanning function of SDK is basically the same as another app that of named scanning Almighty King, and the scanning effect is no less than that app. The intelligent edge detection effect reaches the same level as Microsoft Office Lens. The app URL is: https://apps.apple.com/cn/app/id1325527674 </p>
-</div>
+<p>A scanning tool app, I am mainly responsible for developing the SDK of the app scanning components, which mainly includes SDK License module, intelligent edge  detection module, scanning module and filter module. The SDK is packaged into libraries required by Android and ios respectively. The scanning function of SDK is basically the same as another app that of named scanning Almighty King, and the scanning effect is no less than that app. The intelligent edge detection effect reaches the same level as Microsoft Office Lens. The app URL is: https://apps.apple.com/cn/app/id1325527674 <br><br/></p>
 </div>
 </div>
 
+
 <!--Service 8-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
 <h3>Face Recognition Development Based on Fluorite Camera</h3>
-<p>We using the fluorite camera to go on secondary development, At the beginning, the face recognition module of dlib library was used, and later, FaceNet was used for face recognition. In detail, firstly, MTCNN is used to detect the face, then find the key points of the face, align the face, calculate the 512-dimensional face feature vector, and finally compare the feature vector with the feature vector in the face library, finally, return the comparison result to the server. Without considering the interference of occlusion and bright light, the correct recognition rate of the camera can reach about 95%.</p>
+<p>We using the fluorite camera to go on secondary development, At the beginning, the face recognition module of dlib library was used, and later, FaceNet was used for face recognition. In detail, firstly, MTCNN is used to detect the face, then find the key points of the face, align the face, calculate the 512-dimensional face feature vector, and finally compare the feature vector with the feature vector in the face library, finally, return the comparison result to the server. Without considering the interference of occlusion and bright light, the correct recognition rate of the camera can reach about 95%.<br><br/></p>
 </div>
 </div>
 </div>
-</div>
+
 
 <!--.row-->
 
 <div class="row">
 
 <!--Service 9-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-photo"></i>
 </div>
 <div class="service_content">
 <h3>Face Expression Recognition</h3>
-<p>First use cnn detection to detect the face, then use 68 descriptors to locate the facial features and set them as key points, combine these key points for classification and discrimination, and finally recognize the facial expression through the classification and discrimination results. There are four types of expressions to be recognized: angry, surprised, happy, and normal. The accuracy of expression recognition can reach more than 90%.</p>
-</div>
+<p>First use Yolo to detect the face, then use 68 descriptors to locate the facial features and set them as key points, combine these key points for classification and discrimination, and finally recognize the facial expression through the classification and discrimination results. There are four types of expressions to be recognized: angry, surprised, happy, and normal. The accuracy of expression recognition can reach more than 90%.<br><br/></p>
 </div>
 </div>
 
+
 <!--Service 10-->
-<div class="col-sm-6 item">
 <div class="content">
 <div class="font-icon">
 <i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
 <h3>Enhancement and Haze Removal in Traffic Surveillance Video</h3>
-<p>The goal is improve the imaging quality in traffic surveillance video by use image enhancement algorithm. Firstly, i developed a local histogram statistical algorithm, and then i developed a fuzzy domain edge contrast enhancement algorithm, the imaging enhancement effect is obvious. In the haze environment, a contrast-constrained adaptive histogram algorithm is used first, and then a new fast dehazing algorithm is developed based on the principle of Dark Channel and the atmospheric scattering model combined with PCA. The dehazing effect is obvious, and the algorithm can meet the real-time processing needs.</p>
-</div>
+<p>The goal is improve the imaging quality in traffic surveillance video by use image enhancement algorithm. Firstly, i developed a local histogram statistical algorithm, and then i developed a fuzzy domain edge contrast enhancement algorithm, the imaging enhancement effect is obvious. In the haze environment, a contrast-constrained adaptive histogram algorithm is used first, and then a new fast dehazing algorithm is developed based on the principle of Dark Channel and the atmospheric scattering model combined with PCA. The dehazing effect is obvious, and the algorithm can meet the real-time processing needs.<br><br/></p>
 </div>
 </div>
 </div>
@@ -519,186 +517,139 @@
 <h2>My Showcase</h2>
 </div>
 <ul class="list-unstyled ul-filter">
-<li data-filter="*" class="active_filter">all</li>
-<li data-filter=".logo">logo</li>
-<li data-filter=".coding">coding</li>
-<li data-filter=".design">Design</li></ul>
+<li data-filter="*" class="active_filter">All</li>
+<li data-filter=".detection">Object Detection</li>
+<li data-filter=".segmentation">Semantic Segmentation</li>
+<li data-filter=".ocr">OCR</li>
+<li data-filter=".face">Face Det&Rec</li>
+<li data-filter=".tracking">ReID Tracking</li>
+<li data-filter=".imgAlgorithm">Image Algorithm</li>
+</ul>
+
 <div class="row grid" style="position: relative; height: 745.314px;">
-<!--project 1 (Project popup)-->
-<div class="col-xs-12 col-sm-6 item grid-sizer design" style="position: absolute; left: 0%; top: 0px;">
+
+<!--project 1 (face recognition)-->
+<div class="col-xs-12 col-sm-6 item grid-sizer face" style="position: absolute; left: 0%; top: 0px;">
 <div class="project_content">
 <div class="my__img">
-<img src="images/work-1.jpg" alt="">
+<img src="images/face_recognition.jpg" alt="">
 </div>
 <div class="info">
-												<div class="display-table">
-													<div class="display-table-cell">
-														<a class="popup-with-zoom-anim" href="#slider_popup">
-															<h3>Project Popup</h3>
-															<p>Design</p>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--Project Details-->
-									<div id="slider_popup" class="zoom-anim-dialog mfp-hide">
-										<div class="display-table">
-											<div class="display-table-cell">
-												<div class="row">
-													<div class="col-sm-6">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/face_recognition.mp4" class="video-popup">
+<h3>Face Recognition</h3>
+<p>Face Det&Rec</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-														<!--Start slider-->
-														<div class="project__slider">
-															<ul class="project-slider rslides rslides1">
 
-																<!-- image 1 -->
-																<li id="rslides1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out 0s;">
-																	<img src="images/work-2.jpg" alt="">
-																</li>
 
-																<!-- image 2 -->
-																<li id="rslides1_s1" style="float: left; position: relative; opacity: 1; z-index: 2; display: list-item; transition: opacity 500ms ease-in-out 0s;" class="rslides1_on">
-																	<img src="images/work-3.jpg" alt="">
-																</li>
+<!--project 2 (face recognition )-->
+<div class="col-xs-12 col-sm-6 item face" style="position: absolute; left: 49.8606%; top: 0px;">
+<div class="project_content">
+<div class="my_img">
+<img src="images/expression_recognition.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/expression_recognition.mp4" class="video-popup">
+<h3>Expression Recognition</h3>
+<p>Face Det&Rec</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-																<!-- image 3 -->
-																<li id="rslides1_s2" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out 0s;" class="">
-																	<img src="images/work-4.jpg" alt="">
-																</li>
+<!--project 3 (face recognition)-->
+<div class="col-xs-12 col-sm-6 item design" style="position: absolute; left: 0%; top: 248px;">
+<div class="project_content">
+<div class="my__img">
+<img src="images/face_recognition.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/face_recognition.mp4" class="video-popup">
+<h3>Face Recognition</h3>
+<p>Face Det&Rec</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-															</ul>
-															<a href="#" class="rslides_nav rslides1_nav prev"><i class="pe-7s-angle-left"></i></a>
-															<a href="#" class="rslides_nav rslides1_nav next"><i class="pe-7s-angle-right"></i></a>
-														</div>
-														<!--End slider-->
+<!--project 4 (face recognition)-->
+<div class="col-xs-12 col-sm-6 item logo" style="position: absolute; left: 49.8606%; top: 248px;">
+<div class="project_content">
+<div class="my__img">
+<img src="images/face_recognition.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/face_recognition.mp4" class="video-popup">
+<h3>Face Recognition</h3>
+<p>Face Det&Rec</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-														<img src="images/work-5.jpg" alt="" class="margin-top-45">
+<!--project 5 (face recognition)-->
+<div class="col-xs-12 col-sm-6 item logo" style="position: absolute; left: 0%; top: 496px;">
+<div class="project_content">
+<div class="my__img">
+<img src="images/face_recognition.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/face_recognition.mp4" class="video-popup">
+<h3>Face Recognition</h3>
+<p>Face Det&Rec</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-														<!--= Youtube Video =-->
-														<iframe height="342" src="http://www.17sucai.com/" class="margin-top-45"></iframe>
-
-													</div>
-													<div class="col-sm-6">
-														<h3>Project Popup</h3>
-														<ul class="list-unstyled project_info">
-															<li><span>Client</span> : Envato</li>
-															<li><span>Date</span> : March 19, 2017</li>
-															<li><span>Skills</span> : HTML5, JS, CSS3</li>
-														</ul>
-														<p>
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-														</p>
-														<a href="#" class="demo">Visit website</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<!--project 2 (Image Overlay)-->
-									<div class="col-xs-12 col-sm-6 item coding" style="position: absolute; left: 49.8606%; top: 0px;">
-										<div class="project_content">
-											<div class="my_img" data-mfp-src="images/work-2.jpg">
-												<img src="images/work-2.jpg" alt="">
-											</div>
-											<div class="info">
-												<div class="display-table">
-													<div class="display-table-cell">
-														<a href="#" class="image_overlay">
-															<h3>Image Overlay</h3>
-															<p>coding</p>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<!--project 3 (Youtube Video)-->
-									<div class="col-xs-12 col-sm-6 item design" style="position: absolute; left: 0%; top: 248px;">
-										<div class="project_content">
-											<div class="my__img">
-												<img src="images/work-3.jpg" alt="">
-											</div>
-											<div class="info">
-												<div class="display-table">
-													<div class="display-table-cell">
-														<a href="https://www.youtube.com/watch?v=hpeYWdkUtcE" class="video-popup">
-															<h3>Youtube Video</h3>
-															<p>Design</p>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<!--project 4 (Vimeo Video)-->
-									<div class="col-xs-12 col-sm-6 item logo" style="position: absolute; left: 49.8606%; top: 248px;">
-										<div class="project_content">
-											<div class="my__img">
-												<img src="images/work-4.jpg" alt="">
-											</div>
-											<div class="info">
-												<div class="display-table">
-													<div class="display-table-cell">
-														<a href="https://vimeo.com/45830194" class="video-popup">
-															<h3>Vimeo Video</h3>
-															<p>logo</p>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<!--project 5 (open url)-->
-									<div class="col-xs-12 col-sm-6 item logo" style="position: absolute; left: 0%; top: 496px;">
-										<div class="project_content">
-											<div class="my__img">
-												<img src="images/work-5.jpg" alt="">
-											</div>
-											<div class="info">
-												<div class="display-table">
-													<div class="display-table-cell">
-														<a href="http://www.google.com" target="_blank">
-															<h3>Project website</h3>
-															<p>logo</p>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<!--project 6 (Image Overlay)-->
-									<div class="col-xs-12 col-sm-6 item coding" style="position: absolute; left: 49.8606%; top: 496px;">
-										<div class="project_content">
-											<div class="my_img" data-mfp-src="images/work-6.jpg">
-												<img src="images/work-6.jpg" alt="">
-											</div>
-											<div class="info">
-												<div class="display-table">
-													<div class="display-table-cell">
-														<a href="#" class="image_overlay">
-															<h3>Image Overlay</h3>
-															<p>coding</p>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<!--.container-->
-						</div>
-						<!--.content-->
-					</section>
-					<!--End Showcase Section-->
+<!--project 6 (face recognition)-->
+<div class="col-xs-12 col-sm-6 item coding" style="position: absolute; left: 49.8606%; top: 496px;">
+<div class="project_content">
+<div class="my_img" data-mfp-src="images/work-6.jpg">
+<img src="images/face_recognition.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/face_recognition.mp4" class="video-popup">
+<h3>Face Recognition</h3>
+<p>Face Det&Rec</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--.container-->
+</div>
+<!--.content-->
+</section>
+<!--End Showcase Section-->
 
 					
 					
