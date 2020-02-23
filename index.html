@@ -203,7 +203,7 @@
 <ul type="disc">
 <li >In 2019, I developed the automatic meter recognition algorithm system of robot operating system. In the step of object detection, I used the best single-stage object detection algorithm, In pointer meter, the accuracy of recognition number exceeded the accuracy of human eye reading for the first time.</li>
 <li >In 2018, I independently completed the SDK development of all scanning functions in a cellphone application (Alpha Note), and led the team to develop a optical character recognition system of PDF based.</li>
-<li >In 2017, We used fluorite camera to develop a face recognition algorithm, and the face recognition precise reached 95%.</li>
+<li >In 2017, We used fluorite camera to develop a face recognition algorithm, and the face recognition precise reached 90%.</li>
 <li >At present, I have been two algorithm invention patents, one CSCI paper, and my master's thesis won the national excellent master's thesis.</li>
 </ul>
 </div>
@@ -322,7 +322,7 @@
 </div>
 <div class="item">
 <div class="date">
-<span>2017 - 2017.8</span>
+<span>2017 - 2017.9</span>
 </div>
 <div class="content">
 <h4>Face Recognition Algorithm Development</h4>
@@ -368,7 +368,7 @@
 </div>
 <div class="service_content">
 <h3>Meter Automatic Detection and Identification of Gas Station</h3>
-<p>First, collect the meter picture data from the gas station, sort and mark it. Then, use the single-stage target detection algorithm CornerNet Lite to detect the meter. Next, use the end-to-end OCR algorithm E2E to identify the numbers and units in the meter, the pointer is segmented by the semantic segmentation algorithm PSP. The intermediate results obtained by deep learning are used in combination with other algorithms to calculate the final number of the meter.The architecture of entire algorithms are deployed on ROS, The data acquired from the camera, and calculated in patrol robot, finally the results are published to ROS, which is then sent to the client.<br><br/></p>
+<p>First, collect the meter picture data from the gas station, sort and mark it. Then, use the single-stage target detection algorithm CornerNet Lite to train and detect the meter. Next, use the end-to-end OCR algorithm E2E to train and identify the numbers and units in the meter, the pointer is train and segmented by the semantic segmentation algorithm PSP. The intermediate results obtained by deep learning are used in combination with other algorithms to calculate the final number of the meter.The architecture of entire algorithms are deployed on ROS, The data acquired from the camera, and calculated in patrol robot, finally the results are published to ROS, which is then sent to the client.<br><br/></p>
 </div>
 </div>
 
@@ -380,7 +380,7 @@
 </div>
 <div class="service_content">
 <h3>Switch Detection of Power Station</h3>
-<p>Firstly, switch and contact data of the power station are collected, label and expand the data, use the single-stage target detection algorithm YoloV3 to detect the switch and contacts of the power station, and use Node to publish the results to the ROS system.<br><br/></p>
+<p>Firstly, switch and contact data of the power station are collected, label and expand the data, use the single-stage target detection algorithm YoloV3 to train and detect the switch and contacts of the power station, and use Node to publish the results to the ROS system.<br><br/></p>
 </div>
 </div>
 </div>
@@ -407,8 +407,8 @@
 <i class="pe-7s-camera"></i>
 </div>
 <div class="service_content">
-<h3>Lane Line Edge Detection in Airport</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br><br/></p>
+<h3>driveway line edge detection</h3>
+<p>First install a RealSense D415 camera on the patrol robot to collect data, organize and label the collected data, then use DeepLabV3Plus to train and semantically segment the driveway. Edge detection was carried out on the driveway area after segmentation, to extract the edge points and the corresponding depth points are saved to Node. Finally the results are published to the ROS system using Node.<br><br/></p>
 </div>
 </div>
 </div>
@@ -436,7 +436,7 @@
 </div>
 <div class="service_content">
 <h3>OCR Based on PDF File</h3>
-<p>The entire algorithm architecture is divided into five parts. The first part is PDF convert to image. The second part is text detection, firstly, CTPN is used to detect line text, and then combine other algorithms to segment each text, and count the position information of each text; The third part is the character recognition, the backbone of the recognition network is dpn92, and the training characters are from GB2312 encoding; The fourth part is text generate to txt file, which is written into a txt file according to the recognition result and position information of each word; The fifth part it is txt file convert to Word file, that is the content in the txt file is written into the Word file. The entire algorithm architecture is deployed on the cloud server, the front end is deployed with Flask. The server response is obtained by sending a PDF document request. the server uses multi-threaded parallel recognition to return the results to the front end. When testing a 400-word pure PDF document, the accuracy rate can reach about 85%.<br><br/></p>
+<p>The entire algorithm architecture is divided into five parts. The first part is PDF convert to image. The second part is text detection, firstly, CTPN is used to detect line text, and then combine other algorithms to segment each text, and count the position information of each text; The third part is the character recognition, the backbone of the recognition network is dpn92, and the training characters are from GB2312 encoding; The fourth part is text generate to txt file, which is written into a txt file according to the recognition result and position information of each word; The fifth part it is txt file convert to Word file, that is the content in the txt file is written into the Word file. The entire algorithm architecture is deployed on the cloud server, the front end is deployed with Flask. The server response is obtained by sending a PDF document request. the server uses multi-threaded parallel recognition to return the results to the front end. When testing a 400-word pure PDF document, the accuracy rate can reach about 80%.<br><br/></p>
 </div>
 </div>
 </div>
@@ -464,7 +464,7 @@
 </div>
 <div class="service_content">
 <h3>Face Recognition Development Based on Fluorite Camera</h3>
-<p>We using the fluorite camera to go on secondary development, At the beginning, the face recognition module of dlib library was used, and later, FaceNet was used for face recognition. In detail, firstly, MTCNN is used to detect the face, then find the key points of the face, align the face, calculate the 512-dimensional face feature vector, and finally compare the feature vector with the feature vector in the face library, finally, return the comparison result to the server. Without considering the interference of occlusion and bright light, the correct recognition rate of the camera can reach about 95%.<br><br/></p>
+<p>We using the fluorite camera to go on secondary development, At the beginning, the face recognition module of dlib library was used, and later, FaceNet was used for face recognition. In detail, firstly, MTCNN is used to detect the face, then find the key points of the face, align the face, calculate the 512-dimensional face feature vector, and finally compare the feature vector with the feature vector in the face library, finally, return the comparison result to the server. Without considering the interference of occlusion and bright light, the correct recognition rate of the camera can reach about 90%.<br><br/></p>
 </div>
 </div>
 </div>
@@ -528,8 +528,67 @@
 
 <div class="row grid" style="position: relative; height: 745.314px;">
 
-<!--project 1 (face recognition)-->
-<div class="col-xs-12 col-sm-6 item grid-sizer face" style="position: absolute; left: 0%; top: 0px;">
+<!--project 1 (pointer recognition)-->
+<div class="col-xs-12 col-sm-6 item grid-sizer detection ocr segmentation" style="position: absolute; left: 0%; top: 0px;">
+<div class="project_content">
+<div class="my__img">
+<img src="images/pointer.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/pointer.mp4" class="video-popup">
+<h3>Pointer Meter Automatic Recognition</h3>
+<p>Object Detection&Semantic sgemantation&End2End OCR</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!--project 2 (switch detection)-->
+<div class="col-xs-12 col-sm-6 item detection" style="position: absolute; left: 49.8606%; top: 0px;">
+<div class="project_content">
+<div class="my_img">
+<img src="images/electric_power.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/electric_power.mp4" class="video-popup">
+<h3>Switch Detection</h3>
+<p>Object Detection</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--project 3 (driveway edge detection)-->
+<div class="col-xs-12 col-sm-6 item segmentation imgAlgorithm" style="position: absolute; left: 0%; top: 248px;">
+<div class="project_content">
+<div class="my__img">
+<img src="images/driveway_edge_detection.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/driveway_edge_detection.mp4" class="video-popup">
+<h3>Driveway Edge Detection</h3>
+<p>Semantic sgemantation&Image Algorithm</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--project 4 (face recognition)-->
+<div class="col-xs-12 col-sm-6 item face" style="position: absolute; left: 49.8606%; top: 248px;">
 <div class="project_content">
 <div class="my__img">
 <img src="images/face_recognition.jpg" alt="">
@@ -547,12 +606,124 @@
 </div>
 </div>
 
-
-
-<!--project 2 (face recognition )-->
-<div class="col-xs-12 col-sm-6 item face" style="position: absolute; left: 49.8606%; top: 0px;">
+<!--project 5 (pedestrian tracking)-->
+<div class="col-xs-12 col-sm-6 item tracking" style="position: absolute; left: 0%; top: 496px;">
 <div class="project_content">
-<div class="my_img">
+<div class="my__img">
+<img src="images/tracking.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/tracking.mp4" class="video-popup">
+<h3>Pedestrian Tracking</h3>
+<p>Object Tracking</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--project 6 (PDF 2 OCR)-->
+<div class="col-xs-12 col-sm-6 item ocr" style="position: absolute; left: 49.8606%; top: 496px;">
+<div class="project_content">
+<div class="my_img" data-mfp-src="images/work-6.jpg">
+<img src="images/OCR_PDF.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/OCR_PDF.mp4" class="video-popup">
+<h3>PDF OCR</h3>
+<p>OCR</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--project 7 (edge detection)-->
+<div class="col-xs-12 col-sm-6 item imgAlgorithm" style="position: absolute; left: 0%; top: 744px;">
+<div class="project_content">
+<div class="my__img">
+<img src="images/edge_detection.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/edge_detection.mp4" class="video-popup">
+<h3>Scan SDK:Edge Detection</h3>
+<p>Image Algorithm</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--project 8 (digital recognition)-->
+<div class="col-xs-12 col-sm-6 item detection ocr" style="position: absolute; left: 49.8606%; top: 744px;">
+<div class="project_content">
+<div class="my__img">
+<img src="images/digital.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/digital.mp4" class="video-popup">
+<h3>Digital Meter Automatic Recognition</h3>
+<p>Object Detection&End2End OCR</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--project 9 (face detection)-->
+<div class="col-xs-12 col-sm-6 item face" style="position: absolute; left: 0%; top: 992px;">
+<div class="project_content">
+<div class="my__img">
+<img src="images/face_detection.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/face_detection.mp4" class="video-popup">
+<h3>Face Detection</h3>
+<p>Face Detection</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--project 10 (haze removal)-->
+<div class="col-xs-12 col-sm-6 item imgAlgorithm" style="position: absolute; left: 49.8606%; top: 992px;">
+<div class="project_content">
+<div class="my__img">
+<img src="images/haze_removal.jpg" alt="">
+</div>
+<div class="info">
+<div class="display-table">
+<div class="display-table-cell">
+<a href="result/haze_removal.mp4" class="video-popup">
+<h3>Haze Removal</h3>
+<p>Image Algorithm</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--project 11 (expression recognition)-->
+<div class="col-xs-12 col-sm-6 item face" style="position: absolute; left: 0%; top: 1240px;">
+<div class="project_content">
+<div class="my__img">
 <img src="images/expression_recognition.jpg" alt="">
 </div>
 <div class="info">
@@ -568,18 +739,18 @@
 </div>
 </div>
 
-<!--project 3 (face recognition)-->
-<div class="col-xs-12 col-sm-6 item design" style="position: absolute; left: 0%; top: 248px;">
+<!--project 12 (tray detection)-->
+<div class="col-xs-12 col-sm-6 item imgAlgorithm" style="position: absolute; left: 49.8606%; top: 1240px;">
 <div class="project_content">
 <div class="my__img">
-<img src="images/face_recognition.jpg" alt="">
+<img src="images/tray_detection.jpg" alt="">
 </div>
 <div class="info">
 <div class="display-table">
 <div class="display-table-cell">
-<a href="result/face_recognition.mp4" class="video-popup">
-<h3>Face Recognition</h3>
-<p>Face Det&Rec</p>
+<a href="result/tray_detection.mp4" class="video-popup">
+<h3>Tray Goods Detection</h3>
+<p>Image Algorithm</p>
 </a>
 </div>
 </div>
@@ -587,18 +758,18 @@
 </div>
 </div>
 
-<!--project 4 (face recognition)-->
-<div class="col-xs-12 col-sm-6 item logo" style="position: absolute; left: 49.8606%; top: 248px;">
+<!--project 13 (intelligence scan)-->
+<div class="col-xs-12 col-sm-6 item imgAlgorithm" style="position: absolute; left: 49.8606%; top: 1488px;">
 <div class="project_content">
 <div class="my__img">
-<img src="images/face_recognition.jpg" alt="">
+<img src="images/intelligence_scan.jpg" alt="">
 </div>
 <div class="info">
 <div class="display-table">
 <div class="display-table-cell">
-<a href="result/face_recognition.mp4" class="video-popup">
-<h3>Face Recognition</h3>
-<p>Face Det&Rec</p>
+<a href="result/intelligence_scan.mp4" class="video-popup">
+<h3>Scan SDK:Intelligence Scan</h3>
+<p>Image Algorithm</p>
 </a>
 </div>
 </div>
@@ -606,43 +777,7 @@
 </div>
 </div>
 
-<!--project 5 (face recognition)-->
-<div class="col-xs-12 col-sm-6 item logo" style="position: absolute; left: 0%; top: 496px;">
-<div class="project_content">
-<div class="my__img">
-<img src="images/face_recognition.jpg" alt="">
-</div>
-<div class="info">
-<div class="display-table">
-<div class="display-table-cell">
-<a href="result/face_recognition.mp4" class="video-popup">
-<h3>Face Recognition</h3>
-<p>Face Det&Rec</p>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-<!--project 6 (face recognition)-->
-<div class="col-xs-12 col-sm-6 item coding" style="position: absolute; left: 49.8606%; top: 496px;">
-<div class="project_content">
-<div class="my_img" data-mfp-src="images/work-6.jpg">
-<img src="images/face_recognition.jpg" alt="">
-</div>
-<div class="info">
-<div class="display-table">
-<div class="display-table-cell">
-<a href="result/face_recognition.mp4" class="video-popup">
-<h3>Face Recognition</h3>
-<p>Face Det&Rec</p>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <!--.container-->
