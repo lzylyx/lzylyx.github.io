@@ -7,23 +7,23 @@ Template Name: Karizma - Modern vCard / Resume / CV / Portfolio
 
 /*
 * -----------------------------------------------------
-*  01.Common Styles 
-*  02.Preloader 
+*  01.Common Styles
+*  02.Preloader
 *  03.Home
 *  04.Menu
-*  05.About Section 
-*  06.Resume Section 
-*  07.Services Section 
+*  05.About Section
+*  06.Resume Section
+*  07.Services Section
 *  08.Prtfolio Section
 *  09.Blog Section
-*  10.Contact Section 
+*  10.Contact Section
 * -----------------------------------------------------
 */
 
 
 
 /*=================================*/
-/*  01.Common Styles 
+/*  01.Common Styles
 /*=================================*/
 
 body, html {
@@ -256,7 +256,7 @@ g.Header {
 
 
 /*=================================*/
-/*  02.Preloader 
+/*  02.Preloader
 /*=================================*/
 
 .page-loader{
@@ -266,7 +266,7 @@ g.Header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fff;  
+    background: #fff;
 }
 
 .loader{
@@ -508,7 +508,7 @@ g.Header {
 
 
 /*=================================*/
-/*  05.About Section 
+/*  05.About Section
 /*=================================*/
 
 .about span.main_work {
@@ -687,7 +687,7 @@ g.Header {
 
 
 /*=================================*/
-/*  06.Resume Section 
+/*  06.Resume Section
 /*=================================*/
 
 .resume h3 {
@@ -757,7 +757,7 @@ g.Header {
 
 
 /*=================================*/
-/*  07.Services Section 
+/*  07.Services Section
 /*=================================*/
 
 .services .item {
@@ -859,18 +859,22 @@ li.active_filter:after {
 
 .portfolio_sec .item .my_img,
 .portfolio_sec .item .my__img {
+    height: 200px;
+    border: 1px solid #ccc;
     overflow: hidden;
+    background: no-repeat center;
+    background-size: contain;
 }
 
-.portfolio_sec .item img {
-    width: 100%;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
+/*.portfolio_sec .item img {*/
+    /*width: 100%;*/
+    /*-webkit-transition: all 0.3s ease-in-out;*/
+    /*transition: all 0.3s ease-in-out;*/
+/*}*/
 
-.portfolio_sec .item:hover img {
-    transform: scale(1.3);
-}
+/*.portfolio_sec .item:hover img {*/
+    /*transform: scale(1.3);*/
+/*}*/
 
 .portfolio_sec .item .info {
     position: absolute;
@@ -1073,7 +1077,7 @@ a.rslides_nav.rslides1_nav.next {
 
 
 /*=================================*/
-/*  10.Contact Section 
+/*  10.Contact Section
 /*=================================*/
 
 .contact h3 {
